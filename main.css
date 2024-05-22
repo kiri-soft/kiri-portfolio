@@ -1,0 +1,11 @@
+*{
+    background-color: #212529;
+}
+
+.card-deck{
+    height : 50%;
+    width: 50%;
+}
+.card{
+    border: none;
+}
