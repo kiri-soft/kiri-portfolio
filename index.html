@@ -21,10 +21,10 @@
       font-family: "Raleway", sans-serif;
     }
 
-    #customer_feedback_form{
+    #customer_feedback_form {
       display: flex;
       flex-direction: column;
-      gap:10px;
+      gap: 10px;
       align-items: center;
     }
 
@@ -35,7 +35,7 @@
 
     #close_review {
       display: none;
-      
+
     }
   </style>
 </head>
@@ -254,15 +254,21 @@
 
     </div>
 
-<!-- customer-feedback-form -->
+    <!-- customer-feedback-form -->
     <div id="customer_feedback_form">
-      <button class="w3-button w3-teal w3-padding-large w3-hover-black" id="add_review" onclick="add_review()">Add Review</button>
-      <button class="w3-button w3-deep-purple w3-padding-large w3-hover-black" id="close_review" onclick="close_review()">Close Review</button>
-    <div id="customer_feedback">
-      <iframe
-        src="https://docs.google.com/forms/d/e/1FAIpQLSd0fA4-Jv0DAA7QeP7UoBZ-jORTp-tjUN4XjKDwXa1xCybv_w/viewform?embedded=true"
-        width="375" height="640" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-    </div>
+      <button class="w3-button w3-teal w3-padding-large w3-hover-black" id="add_review" onclick="add_review()">Add
+        Review</button>
+
+      <div id="customer_feedback">
+        <iframe
+          src="https://docs.google.com/forms/d/e/1FAIpQLSd0fA4-Jv0DAA7QeP7UoBZ-jORTp-tjUN4XjKDwXa1xCybv_w/viewform?embedded=true"
+          width="375" height="640" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+      </div>
+      <div id="close_review">
+        <button class="w3-button w3-deep-purple w3-padding-large w3-hover-black" onclick="close_review()">Close
+          Review</button>
+        <p style="color:red"><b>Please Make sure to submit the form before closing.</b></p>
+      </div>
     </div>
 
     <!--Terms And Conditions-->
